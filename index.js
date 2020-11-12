@@ -9,5 +9,5 @@ app.get('/damn', (req, res) => {
     res.send({hi : 'damn'});
 })
 
-var port_number = server.listen(process.env.PORT || 3000);
-app.listen(port_number);
+const PORT = process.env.PORT || 8000
+app.listen(PORT);
